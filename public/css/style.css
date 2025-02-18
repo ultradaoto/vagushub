@@ -289,9 +289,11 @@ footer {
 }
 
 .author-image {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    margin-right: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle drop shadow */
     object-fit: cover;
 }
 

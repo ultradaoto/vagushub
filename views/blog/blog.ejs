@@ -1,0 +1,136 @@
+<%- include('../partials/header') %>
+
+<main class="blog-listing-page">
+    <div class="blog-header">
+        <h1>VagusHub - Blog</h1>
+        <p class="subtitle">Learn all about the Vagus Nerve from our Blog, learn about supplements, exercises, devices, coaching, and more!</p>
+    </div>
+
+    <div class="blog-grid">
+        <!-- Getting Started Post -->
+        <article class="blog-card">
+            <a href="/blog/getting-started" class="blog-card-link">
+                <img src="/images/blog/Vegus-Nerve-GIF-1.gif" alt="Getting Started with Vagus Nerve" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h2>Getting Started - So You Just Heard About Vagus Nerve Stimulation, Now What?</h2>
+                    <div class="post-meta">
+                        <span class="date">July 19th, 2019</span>
+                        <span class="author">By Sterling Cooley</span>
+                    </div>
+                    <p class="excerpt">Welcome to the world of Vagus Nerve Stimulation! If you're like most people, right now you're feeling a mix of excitement, and a bit of confusion. Don't worry! This is a natural response to encountering this vast trove of information...</p>
+                </div>
+            </a>
+        </article>
+
+        <!-- Benefits Post -->
+        <article class="blog-card">
+            <a href="/blog/benefits" class="blog-card-link">
+                <img src="/images/blog/Happy-young-woman-practicing-y-96943613-1030x733.jpg" alt="Benefits of Vagus Nerve Stimulation" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h2>What Are the Benefits of Vagus Nerve Stimulation?</h2>
+                    <div class="post-meta">
+                        <span class="date">July 27th, 2019</span>
+                        <span class="author">By Sterling Cooley</span>
+                    </div>
+                    <p class="excerpt">While it's entirely possible to focus too much attention on the things that can go wrong when the Vagus Nerve is not working very well, that's an important part of the learning process...</p>
+                </div>
+            </a>
+        </article>
+
+        <!-- Top Products Post -->
+        <article class="blog-card">
+            <a href="/blog/top-products" class="blog-card-link">
+                <img src="/images/blog/Top-resources-for-a-healthy-vagus-nerve.jpg" alt="Top Products for Vagus Nerve Health" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h2>Top Recommended Products for Keeping Your Vagus Nerve Healthy</h2>
+                    <div class="post-meta">
+                        <span class="date">June 29th, 2019</span>
+                        <span class="author">By Sterling Cooley</span>
+                    </div>
+                    <p class="excerpt">The secret is out, folks. More and more people are learning just how important the Vagus Nerve is to their entire spectrum of personal health...</p>
+                </div>
+            </a>
+        </article>
+
+        <!-- Stay in Touch Post -->
+        <article class="blog-card">
+            <a href="/blog/stay-in-touch" class="blog-card-link">
+                <img src="/images/blog/shutterstock_92693746.jpg" alt="Stay Connected with VagusHub" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h2>We Can Go Away Any Day: Here's How to Stay In Touch!</h2>
+                    <div class="post-meta">
+                        <span class="date">July 30th, 2019</span>
+                        <span class="author">By Sterling Cooley</span>
+                    </div>
+                    <p class="excerpt">In this amazing world of social media, and exponential growth of groups, there can naturally be people who wish to shut it down...</p>
+                </div>
+            </a>
+        </article>
+    </div>
+</main>
+
+<style>
+.blog-listing-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.blog-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.blog-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card-content {
+    padding: 1.5rem;
+}
+
+.blog-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.post-meta {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.excerpt {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+</style>
+
+<%- include('../partials/footer') %> 

@@ -54,13 +54,55 @@ router.get('/priming', (req, res) => {
 
 router.get('/theory', (req, res) => {
     res.render('blog/theory', { 
-        title: 'Understanding Polyvagal Theory - VagusHub.com' 
+        title: 'The Nemertean Vagus Nerve Origin Theory - VagusHub.com' 
     });
 });
 
 router.get('/planner', (req, res) => {
     res.render('blog/planner', { 
         title: 'Daily Vagus Nerve Planner - VagusHub.com' 
+    });
+});
+
+router.get('/ultrasound', (req, res) => {
+    res.render('blog/ultrasound', { 
+        title: 'Benefits of Vagus Nerve Ultrasound Stimulation - VagusHub.com' 
+    });
+});
+
+router.get('/citations', (req, res) => {
+    res.render('blog/citations', { 
+        title: 'Citations & Research Papers Covering Vagus Nerve Stimulation Protocols, Technology, Etc. - VagusHub.com' 
+    });
+});
+
+router.get('/top-products', (req, res) => {
+    res.render('blog/top-products', { 
+        title: 'Top Resources for Vagus Nerve Health - VagusHub.com' 
+    });
+});
+
+router.get('/media', (req, res) => {
+    res.render('blog/media', { 
+        title: 'Sterling Cooley Media Appearances - VagusHub.com' 
+    });
+});
+
+router.get('/testimonials', (req, res) => {
+    res.render('blog/testimonials', { 
+        title: 'Vagus Nerve Program Testimonials - VagusHub.com' 
+    });
+});
+
+router.get('/benefits', (req, res) => {
+    res.render('blog/benefits', { 
+        title: 'Benefits of Vagus Nerve Stimulation - VagusHub.com' 
+    });
+});
+
+router.get('/stay-in-touch', (req, res) => {
+    res.render('blog/stay-in-touch', { 
+        title: 'Stay Connected with VagusHub - VagusHub.com' 
     });
 });
 
