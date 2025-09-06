@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= typeof title !== 'undefined' ? title : 'VagusHub.com' %></title>
     <link rel="stylesheet" href="/css/style.css">
+    <style>
+      /* Mobile-safe header adjustments */
+      html, body { overflow-x: hidden; }
+      @media (max-width: 680px) {
+        header nav { flex-direction: column; align-items: center; gap: 10px; }
+        header nav .logo { margin-bottom: 4px; }
+        header nav ul { 
+          width: 100%;
+          display: grid; 
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 8px; 
+          justify-items: center;
+        }
+        header nav ul li { width: 100%; display: flex; justify-content: center; }
+        header nav ul li a { 
+          display: block; 
+          width: 100%; 
+          text-align: center; 
+          padding: 10px 12px; 
+        }
+        header nav ul li a.cta-button { grid-column: 1 / -1; }
+      }
+    </style>
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="<%= ogTitle %>">
+    <meta property="og:description" content="<%= ogDescription %>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= ogUrl %>">
+    <meta property="og:image" content="<%= ogImage %>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= ogTitle %>">
+    <meta name="twitter:description" content="<%= ogDescription %>">
+    <meta name="twitter:image" content="<%= ogImage %>">
 </head>
 <body>
     <header>

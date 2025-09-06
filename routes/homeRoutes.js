@@ -2,6 +2,21 @@ const express = require('express');
 const router = express.Router();
 const fetch = require('node-fetch');
 
+// Default Open Graph / Twitter card metadata
+router.use((req, res, next) => {
+    const baseTitle = 'VagusHub - Vagus Nerve Stimulation Resources';
+    const baseDesc = 'Covering Ultrasound Vagus Nerve Stimulation guidance, electrical VNS, breathing, nutrition, and research.';
+    const imagePath = '/images/vagushub-opengraph.jpg';
+    const absoluteUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+    const absoluteImage = `${req.protocol}://${req.get('host')}${imagePath}`;
+
+    res.locals.ogTitle = baseTitle;
+    res.locals.ogDescription = baseDesc;
+    res.locals.ogUrl = absoluteUrl;
+    res.locals.ogImage = absoluteImage;
+    next();
+});
+
 router.get('/', (req, res) => {
     res.render('home', { title: 'VagusHub.com - Learn About Vagus Nerve Stimulation' });
 });
