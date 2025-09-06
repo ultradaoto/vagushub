@@ -4,6 +4,16 @@
     <section class="hero">
         <h1>About VagusHub</h1>
         <p>Your trusted source for vagus nerve education and wellness</p>
+        <div class="about-hero-wrap">
+            <img src="/images/sterling-portrait.png" alt="Sterling Cooley" class="about-hero-img">
+            <div class="about-hero-copy">
+                <p>Founded by Sterling Cooley, VagusHub helps people understand and improve vagus nerve function through evidence-based methods like breathing, movement, electrical VNS, and emerging ultrasound techniques.</p>
+                <div class="hero-links">
+                    <a class="btn primary" href="/getting-started">Start Here: Getting Started</a>
+                    <a class="btn outline" href="/media">Watch Interviews & Media</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="about-content">
@@ -22,6 +32,116 @@
             <p>We combine traditional wisdom with modern science to provide you with the most effective techniques for vagus nerve stimulation and regulation.</p>
         </div>
     </section>
+
+    <section class="featured-links">
+        <h2>Featured Guides</h2>
+        <div class="feature-grid">
+            <a class="feature-card" href="/getting-started">
+                <h3>Getting Started with VNS</h3>
+                <p>Beginner-friendly on-ramps, breathing, and first-week practices.</p>
+            </a>
+            <a class="feature-card" href="/ultrasound">
+                <h3>Ultrasound VNS</h3>
+                <p>Learn foundations, safety, and protocols for ultrasound stimulation.</p>
+            </a>
+            <a class="feature-card" href="/benefits">
+                <h3>Benefits of VNS</h3>
+                <p>Explore the science-backed advantages reported by users and studies.</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="timeline">
+        <h2>About Sterling Cooley — Timeline</h2>
+        <ol class="timeline-list">
+            <li>
+                <div class="date">2013</div>
+                <div class="desc">Begins ultrasound engineering research in Berkeley, CA.</div>
+            </li>
+            <li>
+                <div class="date">2014</div>
+                <div class="desc">Hired by University of Arizona (Tucson) and Dr. Stuart Hameroff to develop ultrasound hardware for neural and consciousness stimulation research.</div>
+            </li>
+            <li>
+                <div class="date">2015</div>
+                <div class="desc">Raises VC funding; moves to Shenzhen, China to accelerate device development.</div>
+            </li>
+            <li>
+                <div class="date">2016</div>
+                <div class="desc">Relocates to Washington, DC; coordinates ultrasound grant funding with NIH. During a DARPA/Pentagon meeting, hears interest in Vagus Nerve Stimulation.</div>
+            </li>
+            <li>
+                <div class="date">2017</div>
+                <div class="desc">Begins experimentation with ultrasound stimulation of the cervical (neck) vagus nerve; finds exceptional effects.</div>
+            </li>
+            <li>
+                <div class="date">2018</div>
+                <div class="desc">Launches human trial with 50 initial participants for ultrasound VNS therapy — a major success.</div>
+            </li>
+            <li>
+                <div class="date">2019</div>
+                <div class="desc">Launches an online course with human coaching add-on; supports 300+ participants rapidly and successfully.</div>
+            </li>
+            <li>
+                <div class="date">2020</div>
+                <div class="desc">Vagus Nerve Stimulation & Repair Program and Facebook group grow to tens of thousands of daily readers and ultrasound users.</div>
+            </li>
+            <li>
+                <div class="date">2021</div>
+                <div class="desc">Trains additional coaches to implement ultrasound VNS into their successful practices.</div>
+            </li>
+            <li>
+                <div class="date">2022</div>
+                <div class="desc">Presents at the 5th Annual Bioelectrical Medicine Conference (NYC); deepens insights into the Insular Cortex–Vagus connection.</div>
+            </li>
+            <li>
+                <div class="date">2023</div>
+                <div class="desc">Develops a Brain & Vagus Nerve protocol with faster, greater results for clients.</div>
+            </li>
+            <li>
+                <div class="date">2024</div>
+                <div class="desc">Transitions training fully online via “Ultra Skool”; expands research into ultrasound and neurodegeneration; launches an Alzheimer’s Research Group.</div>
+            </li>
+            <li>
+                <div class="date">2025</div>
+                <div class="desc">Leads mid-scale human study applying ultrasound to treat and potentially reverse Alzheimer’s disease; receives IRB & FDA nod to continue.</div>
+            </li>
+        </ol>
+        <div class="timeline-cta">
+            <a class="btn outline" href="/media">See interviews and talks along this journey →</a>
+        </div>
+    </section>
 </main>
 
 <%- include('partials/footer') %> 
+
+<style>
+.about-hero-wrap{display:grid;grid-template-columns:180px 1fr;gap:16px;align-items:center;margin-top:12px}
+.about-hero-img{width:100%;height:auto;border-radius:14px;box-shadow:0 10px 30px rgba(2,24,43,.08)}
+.about-hero-copy p{margin:0 0 10px;color:var(--muted)}
+.hero-links{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 14px;border-radius:12px;text-decoration:none}
+.btn.primary{background:var(--primary);color:#fff;box-shadow:0 6px 18px rgba(14,165,233,.16)}
+.btn.outline{border:1px solid var(--border);color:var(--text-dark);background:#fff}
+.btn.outline:hover{background:#f8fafc}
+
+.featured-links{margin:28px 0}
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.feature-card{display:block;background:#fff;border:1px solid var(--border);border-radius:14px;padding:14px;text-decoration:none;color:var(--text-dark);box-shadow:0 12px 32px rgba(2,24,43,.06)}
+.feature-card h3{margin:0 0 6px}
+.feature-card p{margin:0;color:var(--muted)}
+.feature-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(2,24,43,.12)}
+.feature-card{transition:transform .25s ease, box-shadow .25s ease}
+
+.timeline{margin:30px 0}
+.timeline-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:10px}
+.timeline-list li{display:grid;grid-template-columns:110px 1fr;gap:12px;align-items:start;background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px;box-shadow:0 8px 24px rgba(2,24,43,.06)}
+.timeline-list .date{font-weight:700;color:#0f172a}
+.timeline-list .desc{color:var(--muted)}
+.timeline-cta{margin-top:14px}
+
+@media (max-width: 720px){
+  .about-hero-wrap{grid-template-columns:1fr}
+  .timeline-list li{grid-template-columns:1fr}
+}
+</style>

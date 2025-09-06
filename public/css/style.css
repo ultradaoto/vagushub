@@ -5,10 +5,14 @@
 }
 
 :root {
-    --header-bg: #fdf6f1; /* Matching the cream color from the screenshot */
+    --header-bg: #fcfdfd;
+    --primary: #0ea5e9;
     --primary-orange: #f4a261;
     --primary-blue: #2b95d3;
-    --text-dark: #333333;
+    --text-dark: #162233;
+    --muted: #5b6b80;
+    --border: #e6edf3;
+    --soft: #f4f9fc;
 }
 
 body {
@@ -20,7 +24,7 @@ body {
 header {
     background-color: var(--header-bg);
     padding: 1rem;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--border);
 }
 
 nav {
@@ -66,6 +70,13 @@ main {
     padding: 2rem;
 }
 
+/* Global accents inspired by style1 */
+.badges { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 10px; }
+.badge { background: var(--soft); border: 1px solid var(--border); color: var(--muted); padding: 6px 10px; border-radius: 999px; font-size: 12px; }
+.accent { height: 6px; width: 140px; border-radius: 6px; background: linear-gradient(90deg, var(--primary), #7dd3fc); margin: 14px 0 18px; }
+.btn { display: inline-block; padding: 12px 18px; border-radius: 12px; text-decoration: none; box-shadow: 0 6px 18px rgba(14,165,233,.16); }
+.btn.primary { background: var(--primary); color: #fff; }
+
 .hero {
     text-align: center;
     padding: 4rem 0;
@@ -89,9 +100,11 @@ main {
 
 .benefit-card {
     padding: 2rem;
-    background-color: #f8f9fa;
-    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
     text-align: center;
+    box-shadow: 0 10px 30px rgba(2,24,43,.05);
 }
 
 .case-study {
@@ -130,12 +143,13 @@ footer {
 .cta-button {
     display: inline-block;
     padding: 1rem 2rem;
-    border-radius: 8px;
+    border-radius: 12px;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
     margin: 1rem 0;
     transition: transform 0.2s ease;
+    box-shadow: 0 6px 18px rgba(14,165,233,.12);
 }
 
 .cta-button:hover {
@@ -173,7 +187,7 @@ footer {
 .blog-post {
     margin-bottom: 3rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border);
 }
 
 .blog-post h2 {
@@ -181,14 +195,14 @@ footer {
 }
 
 .post-meta {
-    color: #666;
+    color: var(--muted);
     margin-bottom: 1rem;
 }
 
 .read-more {
     display: inline-block;
     margin-top: 1rem;
-    color: #2c3e50;
+    color: var(--primary);
     text-decoration: none;
     font-weight: bold;
 }
@@ -213,16 +227,16 @@ footer {
 .form-group textarea {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
 }
 
 .submit-button {
-    background-color: #2c3e50;
+    background-color: var(--primary);
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -249,7 +263,7 @@ footer {
 }
 
 .post-meta {
-    color: #666;
+    color: var(--muted);
     font-size: 1.1rem;
 }
 
@@ -260,8 +274,9 @@ footer {
 .post-image {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
     margin: 2rem 0;
+    box-shadow: 0 10px 30px rgba(2,24,43,.05);
 }
 
 .post-body {
@@ -279,13 +294,15 @@ footer {
 }
 
 .author-card {
-    background-color: #f8f9fa;
+    background-color: #fff;
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
     display: flex;
     gap: 2rem;
     align-items: center;
     margin-top: 3rem;
+    box-shadow: 0 10px 30px rgba(2,24,43,.05);
 }
 
 .author-image {
@@ -293,7 +310,7 @@ footer {
     height: 150px;
     border-radius: 50%;
     margin-right: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle drop shadow */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     object-fit: cover;
 }
 

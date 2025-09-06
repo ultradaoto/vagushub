@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+
+<main class="style-prototype four">
+    <aside class="sidebar">
+        <div class="brand">VagusHub</div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/benefits">Benefits</a>
+            <a href="/symptoms">Symptoms</a>
+            <a href="/top-products">Products</a>
+            <a href="https://www.skool.com/vagus/classroom">Classroom</a>
+        </nav>
+        <div class="support">
+            <span>Need help?</span>
+            <a href="/contact">Contact</a>
+        </div>
+    </aside>
+    <section class="content">
+        <header>
+            <h1>VagusHub — App-like Layout</h1>
+            <p>Left nav, content focus, and sticky header controls for a modern feel.</p>
+        </header>
+        <div class="cards">
+            <div class="card"><h3>Playlists</h3><p>Curated modules for common goals.</p></div>
+            <div class="card"><h3>Daily Practice</h3><p>Short, repeatable routines with timers.</p></div>
+            <div class="card"><h3>Library</h3><p>All articles and videos, neatly indexed.</p></div>
+            <div class="card wide"><h3>Community</h3><p>Join discussions, challenges, and live Q&A.</p></div>
+        </div>
+    </section>
+</main>
+
+<style>
+:root{--bg:#ffffff;--panel:#f7f7fb;--fg:#1f2937;--muted:#6b7280;--edge:#e5e7eb;--accent:#7c3aed}
+body{background:var(--bg)}
+.four{display:grid;grid-template-columns:260px 1fr;min-height:calc(100vh - 120px)}
+.sidebar{background:var(--panel);border-right:1px solid var(--edge);padding:18px;position:sticky;top:0;height:calc(100vh - 120px)}
+.brand{font-weight:800;color:#4338ca;margin:4px 0 10px}
+.sidebar nav{display:flex;flex-direction:column;gap:8px}
+.sidebar a{color:var(--fg);text-decoration:none;padding:10px 12px;border-radius:8px}
+.sidebar a:hover{background:#eef2ff}
+.support{margin-top:auto;font-size:14px;color:var(--muted)}
+.support a{color:#4338ca;text-decoration:none}
+.content{padding:26px}
+.content header h1{margin:0 0 8px;color:var(--fg)}
+.content header p{margin:0 0 16px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:#fff;border:1px solid var(--edge);border-radius:16px;padding:18px;color:var(--fg);box-shadow:0 10px 26px rgba(0,0,0,.06)}
+.card.wide{grid-column:span 2}
+.card h3{margin:0 0 6px}
+.card p{margin:0;color:var(--muted)}
+</style>
+
+<%- include('partials/footer') %>
+
+

@@ -29,29 +29,15 @@
 
             <p>You may stay in touch, on a backup e-mail list, in case the Facebook group does get shut down for any reason.</p>
 
-            <!-- Newsletter Signup Section -->
+            <!-- Zapier Interfaces Embed: Sends email invite to Vagus Skool -->
             <div class="newsletter-signup">
-                <h2>Sign up for our newsletter</h2>
-                <p>Receive the Free Vagus Nerve Stimulation Guidebook, and subscribe to occasional updates in the Vagus Nerve Stimulation World.</p>
-                
-                <form class="signup-form" action="/subscribe" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="firstName" placeholder="Enter your First Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Enter your email" required>
-                    </div>
-                    <button type="submit" class="subscribe-button">Subscribe</button>
-                </form>
+                <h2>Join Vagus Skool Instantly</h2>
+                <p>Enter your email below to receive an instant invite link to our free Vagus Skool community.</p>
+                <script type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+                <zapier-interfaces-page-embed page-id='cm7a22u2g001scwy8qarntors' no-background='true' style='max-width: 900px; height: 500px;'></zapier-interfaces-page-embed>
             </div>
 
-            <div class="author-bio">
-                <img src="/images/blog/17951471_10212858841525943_9023979067200535415_n.jpg" alt="Sterling Cooley" class="author-image">
-                <div class="author-info">
-                    <h3>Sterling Cooley</h3>
-                    <p>Through his Vagus Nerve Stimulation & Repair Program, Sterling has been able to give hope and meaning back to many who felt completely relegated to the trash heaps of history. His work is truly inspired, in that he really lives his work, and is relentless about finding new and novel approaches to fighting auto-immune disorders through Vagus Nerve related stimulation modalities.</p>
-                </div>
-            </div>
+
         </div>
 
         <%- include('../partials/author-card') %>

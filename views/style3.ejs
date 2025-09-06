@@ -1,0 +1,54 @@
+<%- include('partials/header') %>
+
+<main class="style-prototype three">
+    <section class="hero">
+        <h1>VagusHub — Warm & Human</h1>
+        <p>Warm neutrals, generous white space, soft shadows. Friendly and approachable.</p>
+        <div class="actions">
+            <a href="/" class="btn ghost">Home</a>
+            <a href="https://www.skool.com/vagus/classroom" class="btn solid">Join Classroom</a>
+        </div>
+    </section>
+    <section class="pillars">
+        <div class="pillar">
+            <h3>Guided Learning</h3>
+            <p>Clear paths for beginners, intermediates, and advanced students.</p>
+        </div>
+        <div class="pillar">
+            <h3>Evidence-based</h3>
+            <p>Citations and summaries for the latest VNS research.</p>
+        </div>
+        <div class="pillar">
+            <h3>Community-first</h3>
+            <p>Healthy, supportive culture with zero tolerance for spam.</p>
+        </div>
+    </section>
+    <section class="quote">
+        <blockquote>
+            “Small daily practices compound into remarkable nervous-system change.”
+        </blockquote>
+    </section>
+</main>
+
+<style>
+:root{--bg:#faf7f5;--card:#ffffff;--fg:#1f2937;--muted:#6b7280;--accent:#ef8236;--line:#eee}
+body{background:var(--bg)}
+.three{max-width:1100px;margin:0 auto;padding:40px}
+.hero{text-align:center;margin:24px 0 32px}
+.hero h1{font-size:38px;margin:0 0 12px;color:var(--fg)}
+.hero p{color:var(--muted);margin:0 0 20px}
+.actions{display:flex;gap:12px;justify-content:center}
+.btn{padding:12px 18px;border-radius:999px;text-decoration:none}
+.btn.ghost{border:1px solid var(--line);color:var(--fg);background:transparent}
+.btn.solid{background:var(--accent);color:#fff}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:10px 0 22px}
+.pillar{background:var(--card);border-radius:18px;box-shadow:0 16px 40px rgba(0,0,0,.06);padding:20px;border:1px solid var(--line)}
+.pillar h3{margin:0 0 8px}
+.pillar p{margin:0;color:var(--muted)}
+.quote{display:flex;justify-content:center}
+.quote blockquote{font-size:20px;color:#374151;background:#fff;border-left:6px solid var(--accent);padding:14px 18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
+</style>
+
+<%- include('partials/footer') %>
+
+

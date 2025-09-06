@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+
+<main class="style-prototype two">
+    <section class="masthead">
+        <div class="lede">
+            <h1>VagusHub — Editorial Layout</h1>
+            <p>Magazine-style grid, section ribbons, and visual rhythm for skimmable depth.</p>
+            <a href="https://www.skool.com/vagus/classroom" class="cta">Explore Classroom</a>
+        </div>
+        <aside class="toc">
+            <h4>On this page</h4>
+            <nav>
+                <a href="#what">What is VNS</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#methods">Methods</a>
+            </nav>
+        </aside>
+    </section>
+    <section class="editorial">
+        <article>
+            <h2 id="what"><span class="ribbon">What is VNS</span></h2>
+            <p>Vagus nerve stimulation supports the body’s rest-and-digest systems using simple, repeatable practices.</p>
+        </article>
+        <article>
+            <h2 id="benefits"><span class="ribbon alt">Benefits</span></h2>
+            <p>From sleep to stress resilience, consistent VNS practice compounds into durable change.</p>
+        </article>
+        <article>
+            <h2 id="methods"><span class="ribbon">Methods</span></h2>
+            <p>Breathing, ultrasound, and gentle movement are cornerstone modalities we teach and document.</p>
+        </article>
+    </section>
+</main>
+
+<style>
+:root{--bg:#ffffff;--ink:#0f172a;--muted:#475569;--edge:#e2e8f0;--accent:#fb923c;--accent2:#22d3ee}
+.two{max-width:1200px;margin:0 auto;padding:32px}
+.masthead{display:grid;grid-template-columns:2.5fr 1fr;gap:28px;align-items:start;border-bottom:1px solid var(--edge);padding-bottom:24px}
+.lede h1{font-size:44px;line-height:1.08;margin:0 0 10px;color:var(--ink)}
+.lede p{margin:0 0 16px;color:var(--muted)}
+.cta{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b1020;padding:12px 16px;border-radius:12px;text-decoration:none;box-shadow:0 10px 30px rgba(251,146,60,.25)}
+.toc{border:1px solid var(--edge);border-radius:14px;padding:14px}
+.toc h4{margin:0 0 8px;color:var(--ink)}
+.toc nav{display:flex;flex-direction:column;gap:6px}
+.toc a{color:var(--muted);text-decoration:none}
+.toc a:hover{color:var(--ink)}
+.editorial{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:24px 0}
+.editorial article{border:1px solid var(--edge);border-radius:16px;padding:16px;background:#fff;box-shadow:0 10px 24px rgba(2,8,23,.06)}
+.ribbon{background:linear-gradient(90deg,var(--accent),#ffd7ab);padding:4px 10px;border-radius:999px;color:#1f2937;font-size:14px}
+.ribbon.alt{background:linear-gradient(90deg,var(--accent2),#c8f3ff)}
+</style>
+
+<%- include('partials/footer') %>
+
+
