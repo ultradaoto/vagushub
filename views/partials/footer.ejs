@@ -1,7 +1,12 @@
-    <footer>
-        <div class="footer-content">
-            <img src="/images/VAGUSHUB_LOGO.png" alt="VagusHub" class="footer-logo">
-            <p>&copy; <%= new Date().getFullYear() %> Vagus Hub</p>
+    <footer class="bg-vagus-soft border-t border-vagus-border py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-6">
+            <img src="/images/VAGUSHUB_LOGO.png" alt="VagusHub" class="h-12 w-auto opacity-80">
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-vagus-muted font-medium">
+                <a href="/about" class="hover:text-vagus-primary transition-colors">About</a>
+                <a href="/contact" class="hover:text-vagus-primary transition-colors">Contact</a>
+                <a href="/blog" class="hover:text-vagus-primary transition-colors">Blog</a>
+            </div>
+            <p class="text-vagus-muted text-sm">&copy; <%= new Date().getFullYear() %> Vagus Hub. All rights reserved.</p>
         </div>
     </footer>
 </body>

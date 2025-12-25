@@ -5,29 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= typeof title !== 'undefined' ? title : 'VagusHub.com' %></title>
     <link rel="stylesheet" href="/css/style.css">
-    <style>
-      /* Mobile-safe header adjustments */
-      html, body { overflow-x: hidden; }
-      @media (max-width: 680px) {
-        header nav { flex-direction: column; align-items: center; gap: 10px; }
-        header nav .logo { margin-bottom: 4px; }
-        header nav ul { 
-          width: 100%;
-          display: grid; 
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 8px; 
-          justify-items: center;
-        }
-        header nav ul li { width: 100%; display: flex; justify-content: center; }
-        header nav ul li a { 
-          display: block; 
-          width: 100%; 
-          text-align: center; 
-          padding: 10px 12px; 
-        }
-        header nav ul li a.cta-button { grid-column: 1 / -1; }
-      }
-    </style>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <!-- Open Graph / Twitter -->
     <meta property="og:title" content="<%= ogTitle %>">
     <meta property="og:description" content="<%= ogDescription %>">
@@ -39,17 +21,22 @@
     <meta name="twitter:description" content="<%= ogDescription %>">
     <meta name="twitter:image" content="<%= ogImage %>">
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="/" class="logo">
-                <img src="/images/VAGUSHUB_LOGO.png" alt="VagusHub" class="logo-image">
+<body class="bg-white text-vagus-dark font-sans overflow-x-hidden">
+    <header class="bg-white border-b border-vagus-border px-4 py-3 md:px-6 sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <a href="/" class="flex items-center transform hover:scale-105 transition-transform">
+                <img src="/images/VAGUSHUB_LOGO.png" alt="VagusHub" class="h-10 w-auto">
             </a>
-            <ul>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="https://www.skool.com/vagus/classroom/f927d70f?md=2d6de18272354147a2977d3e7cc1eb30" class="cta-button">FREE Case Study</a></li>
+            <ul class="w-full md:w-auto grid grid-cols-2 md:flex md:items-center gap-2 md:gap-8">
+                <li class="flex justify-center"><a href="/about" class="w-full text-center md:text-left py-2 px-3 text-vagus-dark font-semibold hover:text-vagus-primary transition-colors">About</a></li>
+                <li class="flex justify-center"><a href="/contact" class="w-full text-center md:text-left py-2 px-3 text-vagus-dark font-semibold hover:text-vagus-primary transition-colors">Contact</a></li>
+                <li class="flex justify-center"><a href="/blog" class="w-full text-center md:text-left py-2 px-3 text-vagus-dark font-semibold hover:text-vagus-primary transition-colors">Blog</a></li>
+                <li class="col-span-2 md:col-span-1 flex justify-center">
+                    <a href="https://www.skool.com/vagus/classroom/f927d70f?md=2d6de18272354147a2977d3e7cc1eb30" 
+                       class="w-full md:w-auto text-center bg-vagus-blue text-white font-bold py-2.5 px-6 rounded-xl shadow-lg hover:bg-blue-600 hover:-translate-y-0.5 transition-all duration-200">
+                       FREE Case Study
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>

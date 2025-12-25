@@ -1,242 +1,106 @@
 <%- include('../partials/header') %>
 
-<main class="blog-post-page">
-    <article class="blog-post-content">
-        <header class="post-header">
-            <h1>Top Recommended Products for Keeping Your Vagus Nerve Healthy</h1>
-            <div class="post-meta">
-                <span class="author">By Sterling Cooley</span>
-                <span class="date">March 15th, 2023</span>
+<main class="max-w-4xl mx-auto px-4 py-16 md:py-24">
+    <article class="space-y-12">
+        <header class="text-center space-y-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-vagus-dark leading-tight">Top Recommended Products for Vagus Nerve Health</h1>
+            <div class="flex items-center justify-center gap-4 text-vagus-muted font-medium">
+                <span>By Sterling Cooley</span>
+                <span class="w-1.5 h-1.5 bg-vagus-border rounded-full"></span>
+                <span>March 15th, 2023</span>
             </div>
         </header>
 
-        <img src="/images/blog/Top-resources-for-a-healthy-vagus-nerve.jpg" alt="Top resources for a healthy vagus nerve" class="post-image">
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-vagus-primary to-vagus-blue rounded-2xl blur opacity-10"></div>
+            <img src="/images/blog/Top-resources-for-a-healthy-vagus-nerve.jpg" alt="Top resources for a healthy vagus nerve" class="relative w-full h-[400px] object-cover rounded-2xl shadow-xl">
+        </div>
 
-        <div class="post-body">
-            <h2>THE VAGUS NERVE</h2>
-            
-            <p>The secret is out, folks.</p>
-            
-            <p>More and more people are learning just how important the Vagus Nerve is to their entire spectrum of personal health.</p>
-            
-            <p>In fact, it might be one of the most important bundle of nerves that you will ever have the pleasure of working on in your lifetime.</p>
-            
-            <p>So, I have put together a nice resource list for those who wish to take things to the next level, and really have all the things you need to start developing a super healthy Vagus Nerve.</p>
+        <div class="prose prose-lg max-w-none text-vagus-muted leading-relaxed space-y-8">
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold text-vagus-dark mt-0">The Secret is Out</h2>
+                <p>More and more people are learning just how important the Vagus Nerve is to their entire spectrum of personal health. In fact, it might be one of the most important bundle of nerves that you will ever have the pleasure of working on in your lifetime.</p>
+                <p>I have put together a nice resource list for those who wish to take things to the next level, and really have all the things you need to start developing a super healthy Vagus Nerve.</p>
+            </div>
 
-            <h2>SUPPLEMENTS</h2>
-            
-            <p>Here are some of the Must Have supplements to take to immediately protect the Myelin with B12, and Omega fatty Acids:</p>
-            
-            <p><i><b>Methyl B12</b></i> is essential for the health of neurons in your brain, and in your body, but most importantly in your Vagus Nerve.</p>
+            <!-- Supplements Section -->
+            <div class="bg-vagus-soft rounded-3xl p-8 border border-vagus-border shadow-sm space-y-4">
+                <h2 class="text-2xl font-bold text-vagus-dark mt-0">Essential Supplements</h2>
+                <p>Must-have supplements to immediately protect the Myelin with B12 and Omega fatty acids. <span class="text-vagus-blue font-bold text-lg italic">Methyl B12</span> is essential for the health of neurons in your brain and body, but most importantly in your Vagus Nerve.</p>
+            </div>
 
-            <h2>TOOLS</h2>
-            
-            <p>A new addition to this page is a list of home-care products that offer a more complete set of "attack vectors" for stimulating your own Vagus Nerve at home.</p>
-            
-            <p>It is the foundational principle of our ecosystem that it's better to have a practice that you can do every single day, rather than something you only do every two weeks.</p>
-            
-            <p><b><i>Consistency is Key!</i></b></p>
-            
-            <p>The following are products you should have on hand, as they can allow you create consistency in your daily routines for achieving good health.</p>
+            <h2 class="text-3xl font-bold text-vagus-dark pt-8 border-b border-vagus-border pb-4">Tools for Daily Practice</h2>
+            <p>Consistency is Key! It's better to have a practice that you can do every single day rather than something you only do every two weeks. These products help create that consistency.</p>
 
-            <div class="product-section">
-                <h3>Vibration Plate for Deep Vagal Activation (Bonus: For Weight Loss!)</h3>
-                <p>When used daily, you can seriously get one of the greatest cardio boosts if you use this vibration plate in the morning.</p>
-                <p>This particular system below really jumped out because it includes resistance bands, which you can use while on the plate to get an extra boost of muscle building resistance training.</p>
-                <p>Not to mention, it just feels freaking good!</p>
-                
-                <div class="product-card">
-                    <a href="https://www.amazon.com/gp/product/B0794BXVY4/ref=as_li_tl" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/blog/LifePro-Waver-Vibration-Plate-LG.jpg" alt="LifePro Vibration Plate">
-                        <h4>LifePro Vibration Plate Exercise Machine</h4>
-                    </a>
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+                <% const products = [
+                    {
+                        title: 'LifePro Vibration Plate Machine',
+                        desc: 'Deep Vagal activation and weight loss boost. Includes resistance bands for muscle building.',
+                        image: '/images/blog/LifePro-Waver-Vibration-Plate-LG.jpg',
+                        link: 'https://www.amazon.com/gp/product/B0794BXVY4/ref=as_li_tl'
+                    },
+                    {
+                        title: 'Daiwa Felicity Chi Swing Machine',
+                        desc: 'Wake up early and get blood flowing. Equivalent to 60 mins of walking in just 15 mins.',
+                        image: '/images/blog/Swing-Master-LG.jpg',
+                        link: 'https://www.amazon.com/gp/product/B003DQWQNM/ref=as_li_tl'
+                    },
+                    {
+                        title: 'MOVTOTOP Rebounder Trampoline',
+                        desc: 'Moves lymphatic fluid through your body with 3x force of gravity. Great cardio!',
+                        image: '/images/blog/MOVOTOP-Trampoline-Rebounder-LG-1.jpg',
+                        link: 'https://www.amazon.com/gp/product/B07DWWLFM3/ref=as_li_tl'
+                    },
+                    {
+                        title: 'Full Body Red Light Therapy',
+                        desc: 'Activates mitochondria—the power plants that keep your Vagus Nerve functioning.',
+                        image: '/images/blog/Full-Body-Red-Light-Therapy-LG.jpg',
+                        link: 'https://www.amazon.com/gp/product/B07PKM2R8Y/ref=as_li_tl'
+                    }
+                ] %>
+
+                <% products.forEach(product => { %>
+                    <article class="group bg-white border border-vagus-border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <a href="<%= product.link %>" target="_blank" rel="noopener" class="block aspect-video overflow-hidden">
+                            <img src="<%= product.image %>" alt="<%= product.title %>" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </a>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-xl font-bold text-vagus-dark group-hover:text-vagus-primary transition-colors leading-tight"><%= product.title %></h3>
+                            <p class="text-sm text-vagus-muted leading-relaxed"><%= product.desc %></p>
+                            <a href="<%= product.link %>" target="_blank" rel="noopener" class="inline-block text-vagus-primary font-bold text-sm hover:underline">
+                                View on Amazon →
+                            </a>
+                        </div>
+                    </article>
+                <% }) %>
+            </div>
+
+            <!-- Program CTA -->
+            <div class="bg-vagus-blue rounded-[2rem] p-10 md:p-16 text-center text-white space-y-8 shadow-2xl relative overflow-hidden mt-20">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+                <div class="relative space-y-6">
+                    <img src="/images/blog/boxshot-free.png" alt="Program Box Shot" class="w-32 mx-auto drop-shadow-2xl">
+                    <h2 class="text-3xl font-bold mt-0 text-white leading-tight">Ready to Take Your Results to the Next Level?</h2>
+                    <p class="text-lg opacity-90 max-w-xl mx-auto text-white">Join our selective program for personalized support and advanced strategies to master your Vagus Nerve health.</p>
                 </div>
-
-                <h3>Chi Machine</h3>
-                <p>This is an incredible system to use if you want to wakeup early, and get the blood flowing.</p>
-                <p>And, if you combine with the breathing exercise, there's no telling just how unbelievably amazing you're going to feel. This will allow you to send your breathing to even longer breath holds, and put your mind deeper into your Vagus Nerve than you've ever thought possible.</p>
-                <p>Just 15 minutes on this Chi Machine is worth an equivalent amount of 60 minutes worth of walking in terms of circulation, and movement of important lymphatic fluids.</p>
-                
-                <div class="product-card">
-                    <a href="https://www.amazon.com/gp/product/B003DQWQNM/ref=as_li_tl" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/blog/Swing-Master-LG.jpg" alt="Daiwa Felicity Chi Swing Machine">
-                        <h4>Daiwa Felicity Original Chi Swing Machine</h4>
-                    </a>
-                </div>
-
-                <h3>Rebounder, Lymphatic Trampoline</h3>
-                <p>For a slower, but more forceful resonant activity which helps move lymphatic fluid through your body, I recommend also a Rebounder.</p>
-                <p>These are basically mini-trampolines that help exert 3 times the force of gravity on your body, which can help push lymph fluid to pass through your body.</p>
-                <p>These are fun, and are a great form of cardio!</p>
-                
-                <div class="product-card">
-                    <a href="https://www.amazon.com/gp/product/B07DWWLFM3/ref=as_li_tl" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/blog/MOVOTOP-Trampoline-Rebounder-LG-1.jpg" alt="MOVOTOP Rebounder Trampoline">
-                        <h4>MOVTOTOP Rebounder Trampoline 38 Inch</h4>
-                    </a>
-                </div>
-
-                <h3>Red Light Therapy (660nm)</h3>
-                <p>This technology is so under-represented in healthcare, but it's power is immense.</p>
-                <p>This particular setup offers a full body Red Light experience.</p>
-                <p>What is it about red light therapy that has so many becoming raving fans?</p>
-                <p>Well it primarily has to do with its activation of Mitochondria in the body, and these mitochondria power the Vagus Nerve.</p>
-                <p>Without mitochondria, your Vagus Nerve wouldn't work, at all, and neither would the rest of your body.</p>
-                
-                <div class="product-card">
-                    <a href="https://www.amazon.com/gp/product/B07PKM2R8Y/ref=as_li_tl" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/blog/Full-Body-Red-Light-Therapy-LG.jpg" alt="Full Body Red Light Therapy Device">
-                        <h4>Full Body Red Light Therapy Device (660nm)</h4>
-                    </a>
-                </div>
-
-                <h3>Infrared & Red Light Therapy System (850nm) & (660nm)</h3>
-                <p>There are also ways to combine Infrared and Red light therapy together into one panel.</p>
-                <p>This one in particular is a great value!</p>
-                
-                <div class="product-card">
-                    <a href="https://www.amazon.com/gp/product/B07V3WRNF4/ref=as_li_tl" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/blog/Infrared-and-Red-light-Panel-LG-1.jpg" alt="Infrared and Red Light Panel">
-                        <h4>45W Red LED Light Therapy Panel</h4>
+                <div class="relative">
+                    <a href="https://www.skool.com/vagus/classroom/f927d70f?md=2d6de18272354147a2977d3e7cc1eb30" 
+                       class="inline-block bg-white text-vagus-blue font-bold py-5 px-10 rounded-2xl shadow-xl hover:bg-vagus-soft hover:-translate-y-1 transition-all duration-300 text-lg">
+                       Apply for the VNS&R Program
                     </a>
                 </div>
             </div>
 
-            <div class="program-section">
-                <h2>TAKING IT TO THE NEXT LEVEL</h2>
-                <p>It's always great knowing you have products on hand to help push your health in the right direction. However, it's one thing to have the tools on hand, it's another thing to know exactly how to utilize them properly.</p>
-                <p>That's why I created the Vagus Nerve Stimulation & Repair Program.</p>
-                <p>What this course is all about is having the right strategies, and personalized support you need to ensure you're going in the right direction.</p>
-                <p>What I have seen after many years of work in helping people with neurological issues, is that it can be a bumpy ride.</p>
-                <p>One week you're going to feel amazing, another week you might feel like you're going backwards again.</p>
-                <p><i>It's usually after 2-3 weeks into your own Do-It-Yourself protocol, that you throw your hands up in despair, and accept your fate...</i></p>
-                <p><b>That is not how it should be though!</b></p>
-                <p>Imagine a possibility in which you could get consistent results, and steady improvement with the assistance of someone who knows what they're doing? And has done it for themself and others many, many times?!</p>
-                <p>Well, <u>I want to personally invite you to the </u><b><u>Vagus Nerve Stimulation & Repair Program.</u></b></p>
-                <p>We operate by <i>application only</i>, and are very selective in who we work with.</p>
-                <p>So if you are concerned that your Vagus Nerve is holding you back from living a full life, then I encourage you to click the link below and it will offer you an opportunity to fill out an application where you can learn more about what this extraordinary program is all about.</p>
-
-                <div class="program-cta">
-                    <img src="/images/blog/boxshot-free.png" alt="Program Box Shot" width="140">
-                    <a href="https://www.skool.com/vagus/classroom/f927d70f?md=2d6de18272354147a2977d3e7cc1eb30" class="cta-button">
-                        <span class="cta-main">Click Here Now to Learn More About the Vagus Nerve Stimulation & Repair Program</span>
-                    </a>
-                </div>
+            <div class="space-y-6 pt-12">
+                <h2 class="text-3xl font-bold text-vagus-dark mt-0">Summary</h2>
+                <p>There are many options to pursue your best life. Consider adopting meditation for mental resilience. I wish you the absolute best in your journey and am always here to lend a helping hand.</p>
             </div>
-
-            <h2>SUMMARY</h2>
-            <p>There are many options for you to pursue a life of feeling your best.</p>
-            <p>Another final recommendation to many who are looking to find some inner peace, to make this journey you're going through easier, is to consider adopting some consistent form of self-reflection, be it meditation, or otherwise.</p>
-            <p>I remember a fantastic quote recently, which is that we don't meditate for the daily little things, we meditate to prepare us for the hardest day of our lives.</p>
-            <p>Somewhere along the journey, you will likely encounter the toughest thing, or multiple things all at once, that will have you doubting why you're here.</p>
-            <p>Meditation can help you develop more mental resilience, so that you can get back on your feet, no matter what or who knocks you down.</p>
-            <p>I wish you the absolute best in your journey, and am always here to lend a helping hand should you need it.</p>
         </div>
 
         <%- include('../partials/author-card') %>
     </article>
 </main>
 
-<style>
-.product-section {
-    margin: 3rem 0;
-}
-
-.product-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin: 2rem 0;
-    padding: 1.5rem;
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.product-card h4 {
-    color: #333;
-    margin: 1rem 0;
-    font-size: 1.2rem;
-}
-
-.product-card a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.program-section {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 8px;
-    margin: 3rem 0;
-}
-
-.program-cta {
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.cta-button {
-    display: block;
-    background-color: #0174C7;
-    color: white;
-    padding: 1.5rem 2rem;
-    border-radius: 6px;
-    text-decoration: none;
-    margin: 2rem 0;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #015fa3;
-    transform: translateY(-2px);
-    color: white;
-}
-
-.cta-main {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-h2 {
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-h3 {
-    color: #444;
-    margin: 2rem 0 1rem;
-}
-
-@media (max-width: 768px) {
-    .post-header h1 {
-        font-size: 1.8rem;
-    }
-    
-    .product-card {
-        margin: 1rem 0;
-    }
-    
-    .cta-button {
-        padding: 1rem 1.5rem;
-    }
-    
-    .cta-main {
-        font-size: 1rem;
-    }
-}
-</style>
-
-<%- include('../partials/footer') %> 
+<%- include('../partials/footer') %>

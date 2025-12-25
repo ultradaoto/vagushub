@@ -1,140 +1,62 @@
 <%- include('../partials/header') %>
 
-<main class="blog-post-page">
-    <article class="blog-post-content">
-        <header class="post-header">
-            <h1>Citations & Research Papers Covering Vagus Nerve Stimulation Protocols, Technology, Etc.</h1>
-            <div class="post-meta">
-                <span class="author">By Sterling Cooley</span>
-                <span class="date">September 18th, 2021</span>
+<main class="max-w-4xl mx-auto px-4 py-16 md:py-24">
+    <article class="space-y-12">
+        <header class="text-center space-y-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-vagus-dark leading-tight">Citations & Research Papers</h1>
+            <p class="text-xl text-vagus-muted">The scientific foundation of Vagus Nerve Stimulation protocols and technology.</p>
+            <div class="flex items-center justify-center gap-4 text-vagus-muted font-medium">
+                <span>By Sterling Cooley</span>
+                <span class="w-1.5 h-1.5 bg-vagus-border rounded-full"></span>
+                <span>September 18th, 2021</span>
             </div>
         </header>
 
-        <img src="/images/blog/seo-citations.png" alt="Citations and Research Papers" class="post-image">
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-vagus-primary to-vagus-blue rounded-2xl blur opacity-10"></div>
+            <img src="/images/blog/seo-citations.png" alt="Citations and Research Papers" class="relative w-full h-[300px] object-cover rounded-2xl shadow-xl">
+        </div>
 
-        <div class="post-body">
-            <h2>Links to Our Favorite Research Papers:</h2>
-
-            <div class="research-papers">
-                <a href="https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC8766802/" target="_blank" rel="noopener noreferrer">
-                    Therapeutic Low-Intensity Ultrasound for Peripheral Nerve Regeneration – A Schwann Cell Perspective
-                </a>
-
-                <a href="https://www.frontiersin.org/articles/10.3389/fphys.2017.00818/full" target="_blank" rel="noopener noreferrer">
-                    Low-Intensity Ultrasound-Induced Anti-inflammatory Effects Are Mediated by Several Mechanisms
-                </a>
-
-                <a href="https://www.jtcvs.org/article/S0022-5223(19)32401-8/fulltext" target="_blank" rel="noopener noreferrer">
-                    Pulsed ultrasound attenuates the hyperglycemic exacerbation of myocardial ischemia–reperfusion injury
-                </a>
-
-                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0301562918304022" target="_blank" rel="noopener noreferrer">
-                    Modulating the Inflammatory Reflex in Rats Using Low-Intensity Focused Ultrasound Stimulation of the Vagus Nerve
-                </a>
-
-                <a href="https://www.nature.com/articles/s41467-019-08721-0" target="_blank" rel="noopener noreferrer">
-                    Noninvasive ultrasound stimulation of the spleen to treat inflammatory arthritis
-                </a>
-
-                <a href="https://ieeexplore.ieee.org/document/8717064" target="_blank" rel="noopener noreferrer">
-                    Pressure measurement of geometrically curved ultrasound transducer array for spatially specific stimulation of the vagus nerve
-                </a>
-
-                <a href="https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC5927579/" target="_blank" rel="noopener noreferrer">
-                    Neuromodulation with transcranial focused ultrasound
-                </a>
-
-                <a href="https://www.pnas.org/doi/10.1073/pnas.1605635113" target="_blank" rel="noopener noreferrer">
-                    Vagus nerve stimulation inhibits cytokine production and attenuates disease severity in rheumatoid arthritis
-                </a>
-
-                <a href="https://www.hindawi.com/journals/bmri/2014/283525/" target="_blank" rel="noopener noreferrer">
-                    Vagus Nerve through 7 nAChR Modulates Lung Infection and Inflammation: Models, Cells, and Signals
-                </a>
-
-                <a href="https://www.nature.com/articles/s41467-019-08750-9" target="_blank" rel="noopener noreferrer">
-                    Noninvasive sub-organ ultrasound stimulation for targeted neuromodulation
-                </a>
-
-                <a href="https://pubmed.ncbi.nlm.nih.gov/23169440/" target="_blank" rel="noopener noreferrer">
-                    The vagus nerve and the inflammatory reflex--linking immunity and metabolism
-                </a>
+        <div class="prose prose-lg max-w-none text-vagus-muted leading-relaxed space-y-8">
+            <div class="bg-vagus-soft border-l-4 border-vagus-blue p-8 rounded-r-2xl space-y-4">
+                <h2 class="text-2xl font-bold text-vagus-dark mt-0">Why Evidence Matters</h2>
+                <p>In the world of bioelectrical medicine, we don't rely on anecdotes alone. The protocols we develop at VagusHub are built on decades of peer-reviewed research. Whether you're exploring <a href="/ultrasound" class="text-vagus-blue font-bold hover:underline">Ultrasound VNS</a> or general <a href="/benefits" class="text-vagus-blue font-bold hover:underline">VNS Benefits</a>, these papers provide the "how" and "why" behind the results our clients see.</p>
             </div>
 
-            <h2>Visit Our Online Research Paper Repository</h2>
-            <p>For more research papers and ongoing discussions, visit our Reddit community:</p>
-            <a href="https://www.reddit.com/r/UNOMOD/" target="_blank" rel="noopener noreferrer" class="repository-link">
-                https://www.reddit.com/r/UNOMOD/
-            </a>
+            <h2 class="text-3xl font-bold text-vagus-dark pt-8 border-b border-vagus-border pb-4">Key Research Papers</h2>
+            
+            <div class="grid grid-cols-1 gap-4">
+                <% const papers = [
+                    { title: 'Therapeutic Low-Intensity Ultrasound for Peripheral Nerve Regeneration', url: 'https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC8766802/' },
+                    { title: 'Low-Intensity Ultrasound-Induced Anti-inflammatory Effects', url: 'https://www.frontiersin.org/articles/10.3389/fphys.2017.00818/full' },
+                    { title: 'Pulsed ultrasound attenuates myocardial ischemia–reperfusion injury', url: 'https://www.jtcvs.org/article/S0022-5223(19)32401-8/fulltext' },
+                    { title: 'Modulating the Inflammatory Reflex in Rats Using Low-Intensity Focused Ultrasound', url: 'https://www.sciencedirect.com/science/article/abs/pii/S0301562918304022' },
+                    { title: 'Noninvasive ultrasound stimulation of the spleen to treat inflammatory arthritis', url: 'https://www.nature.com/articles/s41467-019-08721-0' },
+                    { title: 'Vagus nerve stimulation inhibits cytokine production in rheumatoid arthritis', url: 'https://www.pnas.org/doi/10.1073/pnas.1605635113' },
+                    { title: 'The vagus nerve and the inflammatory reflex--linking immunity and metabolism', url: 'https://pubmed.ncbi.nlm.nih.gov/23169440/' },
+                    { title: 'Noninvasive sub-organ ultrasound stimulation for targeted neuromodulation', url: 'https://www.nature.com/articles/s41467-019-08750-9' }
+                ] %>
+
+                <% papers.forEach(paper => { %>
+                    <a href="<%= paper.url %>" target="_blank" rel="noopener" class="group flex items-center justify-between p-6 bg-white border border-vagus-border rounded-xl hover:bg-vagus-soft hover:border-vagus-primary transition-all duration-200">
+                        <span class="font-medium text-vagus-dark group-hover:text-vagus-primary"><%= paper.title %></span>
+                        <svg class="w-5 h-5 text-vagus-muted group-hover:text-vagus-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                <% }) %>
+            </div>
+
+            <div class="bg-vagus-dark text-white rounded-[2rem] p-12 text-center space-y-6 shadow-xl relative overflow-hidden mt-16">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-vagus-primary/20 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+                <h2 class="text-3xl font-bold mt-0 text-white">Join the Discussion</h2>
+                <p class="text-lg opacity-90 max-w-xl mx-auto">We maintain an active repository of new research and community findings over on our specialized Reddit community.</p>
+                <a href="https://www.reddit.com/r/UNOMOD/" target="_blank" rel="noopener" class="inline-block bg-vagus-primary text-white font-bold py-4 px-10 rounded-xl hover:bg-sky-500 transition-colors shadow-lg">
+                    Visit the /r/UNOMOD Repository
+                </a>
+            </div>
         </div>
 
         <%- include('../partials/author-card') %>
     </article>
 </main>
 
-<style>
-.blog-post-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.post-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.post-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-}
-
-.post-body {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-.research-papers {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.research-papers a {
-    color: #0066cc;
-    text-decoration: none;
-    padding: 1rem;
-    background-color: #f8f9fa;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-}
-
-.research-papers a:hover {
-    background-color: #e9ecef;
-    transform: translateX(10px);
-}
-
-.repository-link {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #0066cc;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.repository-link:hover {
-    text-decoration: underline;
-}
-
-h2 {
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-</style>
-
-<%- include('../partials/footer') %> 
+<%- include('../partials/footer') %>
