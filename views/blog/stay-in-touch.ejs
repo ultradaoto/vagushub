@@ -1,47 +1,49 @@
 <%- include('../partials/header') %>
 
-<main class="blog-post-page">
-    <article class="blog-post-content">
-        <header class="post-header">
-            <h1>We Can Go Away Any Day: Here's How to Stay In Touch!</h1>
-            <div class="post-meta">
-                <span class="author">By Sterling Cooley</span>
-                <span class="date">July 30th, 2019</span>
+<main class="max-w-4xl mx-auto px-4 py-16 md:py-24">
+    <article class="space-y-12">
+        <header class="text-center space-y-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-vagus-dark leading-tight">We Can Go Away Any Day: Here's How to Stay In Touch!</h1>
+            <div class="flex items-center justify-center gap-4 text-vagus-muted font-medium">
+                <span>By Sterling Cooley</span>
+                <span class="w-1.5 h-1.5 bg-vagus-border rounded-full"></span>
+                <span>July 30th, 2019</span>
             </div>
         </header>
 
-        <img src="/images/blog/shutterstock_92693746.jpg" alt="Stay connected with VagusHub" class="post-image">
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-vagus-primary to-vagus-blue rounded-2xl blur opacity-10"></div>
+            <img src="/images/blog/shutterstock_92693746.jpg" alt="Stay connected with VagusHub" class="relative w-full h-[400px] object-cover rounded-2xl shadow-xl">
+        </div>
 
-        <div class="post-body">
-            <p>In this amazing world of social media, and exponential growth of groups, there can naturally be people who wish to shut it down.</p>
+        <div class="prose prose-lg max-w-none text-vagus-muted leading-relaxed space-y-6">
+            <p>In this amazing world of social media, and exponential growth of groups, there can naturally be people who wish to shut it down. Unfortunately it seems we are currently under threat of being attacked.</p>
 
-            <p>Unfortunately it seems we are currently under threat of being attacked.</p>
+            <p>I can't say why, as that's not my place. But perhaps it's because the Vagus Nerve Stimulation & Repair group is growing at such a rapid pace, it makes others feel they are being left behind in the dust.</p>
 
-            <p>I can't say why, as that's not my place.</p>
+            <p>It's unfortunate that others seem to think one person's gain, is another person's loss. This group has been extraordinarily helpful to many, and it would be a shame if it were shut down.</p>
 
-            <p>But perhaps it's because the Vagus Nerve Stimulation & Repair group is growing at such a rapid pace, it makes others feel they are being left behind in the dust.</p>
-
-            <p>It's unfortunate that others seem to think one person's gain, is another person's loss.</p>
-
-            <p>This group has been extraordinarily helpful to many, and it would be a shame if it were shut down.</p>
-
-            <p>But, we must have backup plans in case that happens.</p>
-
-            <p>You may stay in touch, on a backup e-mail list, in case the Facebook group does get shut down for any reason.</p>
-
-            <!-- Zapier Interfaces Embed: Sends email invite to Vagus Skool -->
-            <div class="newsletter-signup">
-                <h2>Join Vagus Skool Instantly</h2>
-                <p>Enter your email below to receive an instant invite link to our free Vagus Skool community.</p>
-                <script type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
-                <zapier-interfaces-page-embed page-id='cm7a22u2g001scwy8qarntors' no-background='true' style='max-width: 900px; height: 500px;'></zapier-interfaces-page-embed>
+            <div class="bg-vagus-soft border-2 border-vagus-blue rounded-[2rem] p-8 md:p-12 text-center space-y-8 my-12 shadow-sm">
+                <div class="space-y-4">
+                    <h2 class="text-3xl font-bold text-vagus-dark mt-0">Join Vagus Skool Instantly</h2>
+                    <p class="text-lg text-vagus-muted">Enter your email below to receive an instant invite link to our free Vagus Skool community. This is our primary backup and community hub.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-4 shadow-inner min-h-[500px] flex items-center justify-center border border-vagus-border overflow-hidden">
+                    <script type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+                    <zapier-interfaces-page-embed 
+                        page-id='cm7a22u2g001scwy8qarntors' 
+                        no-background='true' 
+                        style='width: 100%; max-width: 900px; height: 500px;'>
+                    </zapier-interfaces-page-embed>
+                </div>
             </div>
 
-
+            <p>But, we must have backup plans in case that happens. You may stay in touch on our backup e-mail list by joining the community above, ensuring you never lose access to these life-changing resources.</p>
         </div>
 
         <%- include('../partials/author-card') %>
     </article>
 </main>
 
-<%- include('../partials/footer') %> 
+<%- include('../partials/footer') %>

@@ -81,9 +81,7 @@ router.get('/getting-started', (req, res) => {
 });
 
 router.get('/vns-benefits', (req, res) => {
-    res.render('blog/vns-benefits', { 
-        title: 'Benefits of Vagus Nerve Stimulation - VagusHub.com' 
-    });
+    res.redirect(301, '/benefits');
 });
 
 // Add these new routes

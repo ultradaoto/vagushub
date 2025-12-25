@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-vagus-primary: #0ea5e9;
+  --color-vagus-orange: #f4a261;
+  --color-vagus-blue: #2b95d3;
+  --color-vagus-dark: #162233;
+  --color-vagus-muted: #5b6b80;
+  --color-vagus-border: #e6edf3;
+  --color-vagus-soft: #f4f9fc;
+  
+  --font-sans: "Inter", "system-ui", "-apple-system", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply text-vagus-dark bg-white font-sans;
+  }
+}

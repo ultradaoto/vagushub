@@ -1,197 +1,101 @@
 <%- include('../partials/header') %>
 
-<main class="blog-post-page">
-    <article class="blog-post-content">
-        <header class="post-header">
-            <h1>Media Appearances Through The Years</h1>
-            <div class="post-meta">
-                <span class="author">By Sterling Cooley</span>
-                <span class="date">March 15th, 2023</span>
+<main class="max-w-7xl mx-auto px-4 py-16 md:py-24">
+    <header class="text-center space-y-4 mb-20">
+        <h1 class="text-4xl md:text-6xl font-bold text-vagus-dark leading-tight">VagusHub in the <span class="text-vagus-primary">Media</span></h1>
+        <p class="text-xl text-vagus-muted max-w-3xl mx-auto leading-relaxed">
+            Exploring the science of the Vagus Nerve on global podcasts, summits, and demos.
+        </p>
+        <div class="w-24 h-1.5 bg-vagus-primary mx-auto rounded-full mt-8"></div>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-24">
+        <div class="space-y-8">
+            <h2 class="text-3xl font-bold text-vagus-dark leading-tight">Spreading the Word</h2>
+            <p class="text-lg text-vagus-muted leading-relaxed">As the importance of Vagus Nerve health enters the mainstream, our founder **Sterling Cooley** is frequently called upon to share his research on bioelectrical medicine and non-invasive stimulation.</p>
+            
+            <p class="text-lg text-vagus-muted leading-relaxed">Despite the media attention, Sterling maintains a "Client First" approach. When he's not speaking at a summit or being interviewed for a podcast, he's working directly with his <a href="/testimonials" class="text-vagus-blue font-bold hover:underline">clientele</a> on high-level VNS and repair processes.</p>
+            
+            <div class="pt-6">
+                <a href="/about" class="bg-vagus-soft text-vagus-dark font-bold py-4 px-8 rounded-2xl hover:bg-vagus-border transition-all duration-300">
+                    Read the Full Journey →
+                </a>
             </div>
-        </header>
+        </div>
+        
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-vagus-primary to-vagus-blue rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+            <img src="/images/blog/Media-Appearances.jpg" alt="Media Appearances Overview" class="relative rounded-3xl shadow-2xl w-full h-[400px] object-cover">
+        </div>
+    </div>
 
-        <img src="/images/blog/Media-Appearances.jpg" alt="Media Appearances Overview" class="post-image">
+    <!-- Media Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <% const appearances = [
+            {
+                title: 'Health Upgrade Podcast',
+                location: 'Online 2023',
+                id: 'xyKInZ23bL0',
+                desc: 'Discussing the latest upgrades in VNS technology and how to measure real-world results.'
+            },
+            {
+                title: 'Jiu Jitsu Outlet',
+                location: 'Online 2023',
+                id: 'oiGXKLOGNr0',
+                desc: 'Exploring the role of the Vagus Nerve in athletic recovery, fear management, and high-performance states.'
+            },
+            {
+                title: 'East Meets West Summit',
+                location: 'Seattle, WA 2022',
+                id: 's6zui62NtSo',
+                desc: 'Bridging the gap between traditional wellness wisdom and modern bio-electrical stimulation.'
+            },
+            {
+                title: 'Parasympathetic Summit',
+                location: 'Palo Alto, CA 2020',
+                id: 'usWGsNLWpD0',
+                desc: 'A deep dive into why "Rest and Digest" is the foundation of all systemic healing.'
+            },
+            {
+                title: 'Singularity Podcast',
+                location: 'San Francisco, CA 2019',
+                id: '0U8u6l-_7GE',
+                desc: 'The future of human health and the potential for technological neuromodulation.'
+            },
+            {
+                title: 'Berkeley Ultrasound Demo',
+                location: 'San Francisco, CA 2015',
+                id: '70dN3twF6QQ',
+                desc: 'Early live demonstration of the ultrasound technology that paved the way for VagusHub.'
+            }
+        ] %>
 
-        <div class="post-body">
-            <h2>MEDIA APPEARANCES OF STERLING COOLEY</h2>
-            
-            <p>Since the world of the Vagus Nerve gets more and more popular, our Founder, Sterling Cooley, gets called upon more and more to appear and speak about his exciting work.</p>
-            
-            <p>Below you will be able to see the Media Appearances he has made.</p>
-            
-            <p>Mind you, he truly believes in taking on a Client First approach, so when he's not on a Podcast, or being interviewed, he prefers to be working behind the scenes with his tremendous clientelle on Vagus Nerve Stimulation & Repair processes with them.</p>
-
-            <h2>PODCAST APPEARANCES AND INTERVIEWS</h2>
-            
-            <p>You will see the appearances here from the most recent down to some of the earliest interviews Sterling gave on the Vagus Nerve.</p>
-
-            <div class="media-section">
-                <h3>Sterling Cooley on the Singularity Podcast - Video - San Francisco, CA 2019</h3>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/0U8u6l-_7GE?autoplay=0&modestbranding=1&controls=1&showinfo=0&rel=0&hd=1" 
-                            frameborder="0" 
-                            allowfullscreen>
-                    </iframe>
+        <% appearances.forEach(app => { %>
+            <article class="space-y-6 group">
+                <div class="aspect-video rounded-3xl overflow-hidden shadow-lg border border-vagus-border group-hover:shadow-2xl transition-all duration-300">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/<%= app.id %>?autoplay=0&modestbranding=1&controls=1&showinfo=0&rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
                 </div>
-
-                <h3>Sterling Cooley on the East Meets West Summit - Video - Seattle, WA 2022</h3>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/s6zui62NtSo?autoplay=0&modestbranding=1&controls=1&showinfo=0&rel=0&hd=1" 
-                            frameborder="0" 
-                            allowfullscreen>
-                    </iframe>
+                <div class="space-y-3 px-2">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-2xl font-bold text-vagus-dark"><%= app.title %></h3>
+                        <span class="text-xs font-bold text-vagus-muted uppercase tracking-widest"><%= app.location %></span>
+                    </div>
+                    <p class="text-vagus-muted leading-relaxed"><%= app.desc %></p>
                 </div>
+            </article>
+        <% }) %>
+    </div>
 
-                <h3>Sterling Cooley on the Parasympathetic Summit - Video - Palo Alto, CA 2020</h3>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/usWGsNLWpD0?autoplay=0&modestbranding=1&controls=1&showinfo=0&rel=0&hd=1" 
-                            frameborder="0" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
-
-                <h3>Sterling Cooley, CEO of Berkeley Ultrasound Company Demo Presentation - Video - San Francisco, CA 2015</h3>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/70dN3twF6QQ?autoplay=0&modestbranding=1&controls=1&showinfo=0&rel=0&hd=1" 
-                            frameborder="0" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
-
-                <h3>Sterling Cooley on the Health Upgrade Podcast - Podcast - Online 2023</h3>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/xyKInZ23bL0?autoplay=0&modestbranding=1&controls=1&showinfo=0&rel=0&hd=1" 
-                            frameborder="0" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
-
-                <h3>Sterling Cooley on the Jiu Jitsu Outlet - Video - Online 2023</h3>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/oiGXKLOGNr0?autoplay=0&modestbranding=1&controls=1&showinfo=0&rel=0&hd=1" 
-                            frameborder="0" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-
-            <h2>SUMMARY</h2>
-            
-            <p>We appreciate you checking out our numerous Media Appearances! There are certainly a few more scattered over the internet, but this should be good enough to help you get to know us a little bit more through our work.</p>
-            
-            <p>If you would like to learn more about our work with clients, and the types of results you can expect to see from implementing a proper VNS routine into your health journey, you can click the button below to see our Testimonials page.</p>
-
-            <a href="/testimonials" class="cta-button">
-                <span class="cta-main">Click Here See Video Testimonials from Clients of the VNS & Repair Program</span>
+    <!-- CTA Section -->
+    <div class="bg-vagus-soft border border-vagus-border rounded-[3rem] p-12 md:p-20 text-center space-y-8 mt-24 shadow-sm">
+        <h2 class="text-3xl md:text-4xl font-bold text-vagus-dark leading-tight">Experience the Results Yourself</h2>
+        <p class="text-xl text-vagus-muted max-w-2xl mx-auto">Seeing the science is one thing—feeling the transformation is another. Explore the stories of those who have already started their journey.</p>
+        <div class="pt-4">
+            <a href="/testimonials" class="inline-block bg-vagus-blue text-white font-bold py-5 px-12 rounded-2xl shadow-xl hover:bg-blue-600 hover:-translate-y-1 transition-all duration-300 text-lg">
+                View Video Testimonials
             </a>
         </div>
-
-        <%- include('../partials/author-card') %>
-    </article>
+    </div>
 </main>
 
-<style>
-.blog-post-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.post-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.post-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-}
-
-.post-body {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-.media-section {
-    margin: 3rem 0;
-}
-
-.media-section h3 {
-    color: #333;
-    margin: 2rem 0 1rem;
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    margin-bottom: 3rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border-radius: 8px;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.cta-button {
-    display: block;
-    background-color: #0174C7;
-    color: white;
-    padding: 1.5rem 2rem;
-    border-radius: 6px;
-    text-decoration: none;
-    margin: 2rem 0;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #015fa3;
-    transform: translateY(-2px);
-    color: white;
-}
-
-.cta-main {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-h2 {
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .post-header h1 {
-        font-size: 1.8rem;
-    }
-    
-    .media-section h3 {
-        font-size: 1.2rem;
-    }
-    
-    .cta-button {
-        padding: 1rem 1.5rem;
-    }
-    
-    .cta-main {
-        font-size: 1rem;
-    }
-}
-</style>
-
-<%- include('../partials/footer') %> 
+<%- include('../partials/footer') %>
