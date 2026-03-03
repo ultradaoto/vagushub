@@ -5,9 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js",
-    "build:css": "npx tailwindcss -i ./public/css/input.css -o ./public/css/style.css",
-    "watch:css": "npx tailwindcss -i ./public/css/input.css -o ./public/css/style.css --watch"
+    "dev": "nodemon server.js"
   },
   "dependencies": {
     "ejs": "^3.1.9",
@@ -23,10 +21,6 @@
   "author": "Sterling Cooley",
   "license": "MIT",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.18",
-    "autoprefixer": "^10.4.23",
-    "nodemon": "^3.1.10",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.18"
+    "nodemon": "^3.1.10"
   }
 }

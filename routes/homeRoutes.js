@@ -81,7 +81,9 @@ router.get('/getting-started', (req, res) => {
 });
 
 router.get('/vns-benefits', (req, res) => {
-    res.redirect(301, '/benefits');
+    res.render('blog/vns-benefits', { 
+        title: 'Benefits of Vagus Nerve Stimulation - VagusHub.com' 
+    });
 });
 
 // Add these new routes
@@ -148,6 +150,12 @@ router.get('/benefits', (req, res) => {
 router.get('/stay-in-touch', (req, res) => {
     res.render('blog/stay-in-touch', { 
         title: 'Stay Connected with VagusHub - VagusHub.com' 
+    });
+});
+
+router.get('/hourofpower', (req, res) => {
+    res.render('blog/hour-of-power', {
+        title: 'Hour of Power - Audio Affirmation Program - VagusHub.com'
     });
 });
 
