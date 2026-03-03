@@ -1,0 +1,45 @@
+name: Deploy VagusHub
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-vagushub-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.REMOTE_PORT || '22' }}
+          script: |
+            cd ~/vagushub
+            git pull origin main
+            npm install --production
+            pm2 reload vagushub
+            pm2 save
+
+      - name: Verify deployment
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.REMOTE_PORT || '22' }}
+          script: |
+            pm2 list | grep vagushub
+            curl -s -o /dev/null -w "%{http_code}" http://localhost:3300/ || true
+
+      - name: Deployment summary
+        run: |
+          echo "✅ VagusHub deployed successfully!"
+          echo "🌐 URL: https://vagushub.com"
