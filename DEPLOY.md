@@ -4,7 +4,7 @@
 
 Pushes to `main` automatically deploy to the production server via GitHub Actions.
 
-### Required Secrets
+### Required Secrets (one-time setup)
 
 Add these in **Settings → Secrets and variables → Actions** (repo: `ultradaoto/vagushub`):
 
@@ -16,6 +16,12 @@ Add these in **Settings → Secrets and variables → Actions** (repo: `ultradao
 | `SSH_PRIVATE_KEY` | *(contents of your SSH private key)* | Key that can SSH as deployer@143.198.103.15 |
 
 Use the same key you use for `ssh deployer@143.198.103.15` (e.g. `~/.ssh/id_ed25519`).
+
+**Quick setup via script** (after `gh auth login`):
+
+```powershell
+.\scripts\setup-deploy-secrets.ps1
+```
 
 ### Manual deploy (if Actions unavailable)
 
