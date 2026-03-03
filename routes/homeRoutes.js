@@ -159,6 +159,18 @@ router.get('/hourofpower', (req, res) => {
     });
 });
 
+router.get('/pineal-gland', (req, res) => {
+    res.render('blog/pineal-gland', {
+        title: 'How to Decalcify Your Pineal Gland - VagusHub.com'
+    });
+});
+
+router.get('/nemuri', (req, res) => {
+    res.render('blog/nemuri', {
+        title: 'The Nemuri Breathwork Necklace - VagusHub.com'
+    });
+});
+
 // Handle contact form submissions
 router.post('/contact', (req, res) => {
     // TODO: Add contact form handling logic

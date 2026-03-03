@@ -1,0 +1,166 @@
+<%- include('../partials/header') %>
+
+<main class="blog-post-page">
+    <article class="blog-post-content">
+
+        <header class="post-header">
+            <h1>The Nemuri Breathwork Necklace - Relaxation On Demand</h1>
+            <div class="post-meta">
+                <span class="author">By Sterling Cooley</span>
+                <span class="date">September 3rd, 2023</span>
+            </div>
+        </header>
+
+        <img src="/images/blog/Screenshot-2023-10-09-at-12.30.36-PM.png" alt="Nemuri 3D Pendant" class="post-image">
+
+        <div class="post-body">
+
+            <h2>THE NEMURI 3D PENDANT</h2>
+
+            <p>The Nemuri Pendant is the world's first Wearable Vagus Nerve Stimulation to be fully 3D Printed, requires no batteries, or bluetooth, and you simply breathe through it to regulate your breath.</p>
+
+            <p>It's perfect for learning how to properly stimulate your Vagus Nerve safely and easily, all while sporting a stylish metal of your choice, from Rose Gold, 18k Gold, or Silver.</p>
+
+            <p>You can order in our <strong>NEW</strong> Transparent Model!</p>
+
+            <p>We encourage you to include a "Black Satin Cord 30 inch" to your order from our online webstore. The option is to "Add a chain" and you have options on what Shapeways will ship to you. For $2 you can add the 30 inch length of satin necklace string. <strong>*Recommended!*</strong></p>
+
+            <img src="/images/blog/Screenshot-2023-10-09-at-11.59.41-AM.png" alt="Nemuri Pendant Models" class="post-image" style="margin-top: 1rem; margin-bottom: 2rem;">
+
+            <h2>LINKS TO PURCHASE</h2>
+
+            <p>Our partner service, Shapeways, prints and hand finishes each 3D print by hand, right here in the USA.</p>
+
+            <div class="nemuri-cta">
+                <a class="nemuri-btn" href="https://www.shapeways.com/shops/nemuri3d" target="_blank" rel="noopener noreferrer">
+                    Visit the Nemuri3D Shop Now
+                </a>
+            </div>
+
+            <h2>SUMMARY</h2>
+
+            <p>We know you are going to absolutely <em>love</em> your Nemuri Pendant. We spent a few months making revisions, and you can now wear a reminder of your Vagus Nerve around your neck.</p>
+
+            <p>It also makes a fantastic gift for a loved one who wants a discreet way to manage stress while at home and out in the world.</p>
+
+            <p><strong>We hope you enjoy the Nemuri 3D Printed Pendant!</strong></p>
+
+            <hr class="nemuri-divider">
+
+        </div>
+
+        <%- include('../partials/author-card') %>
+
+    </article>
+</main>
+
+<style>
+.blog-post-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.post-header h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+    color: #231f20;
+}
+
+.post-meta {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    color: #8f8f8f;
+    font-size: 0.95rem;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.post-body {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: #333;
+    margin-top: 2rem;
+}
+
+.post-body h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #231f20;
+    letter-spacing: 0.03em;
+}
+
+.post-body p {
+    margin-bottom: 1.25rem;
+}
+
+/* CTA */
+.nemuri-cta {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 2.5rem;
+}
+
+.nemuri-btn {
+    display: inline-block;
+    background-color: #0174C7;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.15rem;
+    padding: 1rem 2.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(1, 116, 199, 0.25);
+}
+
+.nemuri-btn:hover {
+    background-color: #015fa3;
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+.nemuri-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 3rem 0 2rem;
+}
+
+@media (max-width: 768px) {
+    .blog-post-page {
+        padding: 1.25rem;
+    }
+
+    .post-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .nemuri-btn {
+        font-size: 1rem;
+        padding: 0.9rem 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nemuri-cta {
+        flex-direction: column;
+    }
+}
+</style>
+
+<%- include('../partials/footer') %>
