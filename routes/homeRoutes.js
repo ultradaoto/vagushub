@@ -171,6 +171,12 @@ router.get('/nemuri', (req, res) => {
     });
 });
 
+router.get('/podcast', (req, res) => {
+    res.render('blog/podcast', {
+        title: 'The Vagus Nerve Podcast - VagusHub.com'
+    });
+});
+
 // Handle contact form submissions
 router.post('/contact', (req, res) => {
     // TODO: Add contact form handling logic

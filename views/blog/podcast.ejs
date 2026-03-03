@@ -1,0 +1,251 @@
+<%- include('../partials/header') %>
+
+<main class="blog-post-page">
+    <article class="blog-post-content">
+
+        <header class="post-header">
+            <h1>The Vagus Nerve Podcast</h1>
+            <div class="post-meta">
+                <span class="author">By Sterling Cooley</span>
+                <span class="date">October 28th, 2019</span>
+            </div>
+        </header>
+
+        <img src="/images/blog/Vagus-Nerve-Podcast.png" alt="The Vagus Nerve Podcast" class="post-image">
+
+        <div class="post-body">
+
+            <h2>The Vagus Nerve Podcast</h2>
+
+            <p>We created this because the world needs to know what the Vagus Nerve is really about.</p>
+
+            <p>Consider this an outlet that will give you the latest information and actionable insights into how the Vagus Nerve really works.</p>
+
+            <p>This is information that you won't find in textbooks, or on the internet.</p>
+
+            <p>Not even many of the so-called experts on the Vagus Nerve will know the information contained within this Podcast.</p>
+
+            <p>Big claims! They are accurate!</p>
+
+            <p>Find out for yourself, listen to the latest episode below:</p>
+
+            <!-- Episodes -->
+
+            <div class="podcast-episode">
+                <h2>Episode 6 - Evicting Intruders From Your Vagus Nerve</h2>
+                <div class="podcast-player-placeholder">
+                    <!-- Paste your YouTube, Spotify, or SoundCloud embed here -->
+                    <p>Audio player coming soon.</p>
+                </div>
+            </div>
+
+            <div class="podcast-episode">
+                <h2>Episode 5 - Your Body Is A Pendulum Running Machine</h2>
+                <div class="podcast-player-placeholder">
+                    <!-- Paste your YouTube, Spotify, or SoundCloud embed here -->
+                    <p>Audio player coming soon.</p>
+                </div>
+            </div>
+
+            <div class="podcast-episode">
+                <h2>Episode 4 - The "T-Word" Versus Pendulums</h2>
+                <div class="podcast-player-placeholder">
+                    <!-- Paste your YouTube, Spotify, or SoundCloud embed here -->
+                    <p>Audio player coming soon.</p>
+                </div>
+            </div>
+
+            <div class="podcast-episode">
+                <h2>Episode 3 - "Trauma"</h2>
+                <div class="podcast-player-placeholder">
+                    <!-- Paste your YouTube, Spotify, or SoundCloud embed here -->
+                    <p>Audio player coming soon.</p>
+                </div>
+            </div>
+
+            <div class="podcast-episode">
+                <h2>Episode 2 - The Vagus Nerve Program</h2>
+                <div class="podcast-player-placeholder">
+                    <!-- Paste your YouTube, Spotify, or SoundCloud embed here -->
+                    <p>Audio player coming soon.</p>
+                </div>
+            </div>
+
+            <div class="podcast-episode">
+                <h2>Episode 1 - Introduction</h2>
+                <div class="podcast-player-placeholder">
+                    <!-- Paste your YouTube, Spotify, or SoundCloud embed here -->
+                    <p>Audio player coming soon.</p>
+                </div>
+            </div>
+
+            <div class="podcast-cta">
+                <a class="podcast-btn" href="/contact">
+                    Click Here to Go To The Vagus Nerve Stimulation Program
+                </a>
+            </div>
+
+            <hr class="podcast-divider">
+
+        </div>
+
+        <%- include('../partials/author-card') %>
+
+    </article>
+</main>
+
+<style>
+.blog-post-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.post-header h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+    color: #231f20;
+}
+
+.post-meta {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    color: #8f8f8f;
+    font-size: 0.95rem;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.post-body {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: #333;
+    margin-top: 2rem;
+}
+
+.post-body h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #231f20;
+}
+
+.post-body > h2:first-of-type {
+    margin-top: 0;
+}
+
+.post-body p {
+    margin-bottom: 1.25rem;
+}
+
+/* Episode blocks */
+.podcast-episode {
+    background: #f8f9fa;
+    border-left: 4px solid #0174C7;
+    border-radius: 0 8px 8px 0;
+    padding: 1.5rem 1.75rem;
+    margin: 2rem 0;
+}
+
+.podcast-episode h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #231f20;
+    margin-bottom: 1rem;
+}
+
+/* Placeholder for embed */
+.podcast-player-placeholder {
+    background: #e9ecef;
+    border: 2px dashed #ced4da;
+    border-radius: 6px;
+    padding: 2rem;
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+.podcast-player-placeholder p {
+    margin: 0;
+}
+
+/* For when a real iframe is dropped in, make it responsive */
+.podcast-player-placeholder iframe,
+.podcast-player-placeholder audio {
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+}
+
+/* CTA */
+.podcast-cta {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+
+.podcast-btn {
+    display: inline-block;
+    background-color: #0174C7;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(1, 116, 199, 0.25);
+}
+
+.podcast-btn:hover {
+    background-color: #015fa3;
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+.podcast-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 3rem 0 2rem;
+}
+
+@media (max-width: 768px) {
+    .blog-post-page {
+        padding: 1.25rem;
+    }
+
+    .post-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .podcast-episode {
+        padding: 1.25rem;
+    }
+
+    .podcast-btn {
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .podcast-cta {
+        flex-direction: column;
+    }
+}
+</style>
+
+<%- include('../partials/footer') %>
